@@ -1,0 +1,35 @@
+import tkinter as tk
+
+# Create the main window.
+window = tk.Tk()
+window.title("Electrical Wiring Game")
+
+# Create a canvas to display the wiring system.
+canvas = tk.Canvas(window)
+canvas.pack()
+
+# Create a list of electrical parts.
+electrical_parts = ["Wire", "Switch", "Outlet"]
+
+# Create a label for the electrical parts list.
+parts_label = tk.Label(window, text="Electrical Parts")
+parts_label.pack()
+
+# Create a drop-down menu for the electrical parts list.
+parts_menu = tk.OptionMenu(window, "", *electrical_parts)
+parts_menu.pack()
+
+# Create a button to add a part to the wiring system.
+add_part_button = tk.Button(window, text="Add Part")
+add_part_button.pack()
+
+# Create a button to validate the wiring system.
+validate_button = tk.Button(window, text="Validate Wiring System")
+validate_button.pack()
+
+# Create a label to display the feedback from the validation step.
+feedback_label = tk.Label(window, text="")
+feedback_label.pack()
+
+# Start the main loop.
+window.mainloop()
