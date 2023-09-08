@@ -1,0 +1,8 @@
+CREATE TABLE electrical_parts (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  type VARCHAR(255) NOT NULL,
+  gauge INT NOT NULL,
+  required_connections TEXT,
+  PRIMARY KEY (id)
+);
